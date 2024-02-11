@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var monto
+        var forma
+        var descuento
+
+        monto = prompt("Ingrese el monto mensual");
+        forma = prompt("Ingresar plan de pago: \n Plan 1: Por el pago de contado año adelantado, con el veinticinco por ciento (25%) de descuento. \n Plan 2: Pago de contado primer semestre adelantado, con el diez porciento (10%). \n Plan 3: Pago del mes en curso, sin descuento. ");
+
+      
+         if (forma==1) {
+             descuento = parseInt(monto) - (( parseInt(monto) * 25 ) / 100 );
+             alert ("El monto final a pagar es: " +descuento);  
+         }
+         else if(forma==2) {
+             descuento = parseInt(monto) - (( parseInt(monto) * 10 ) / 100 );
+         alert ("El monto final a pagar es: " +descuento);
+         }
+         else if(forma==3) {
+             alert ("El monto final a pagar es: " +monto);
+         }
+ 
+      
+      
+
+
+    
+
+    </script>
+</body>
+</html>

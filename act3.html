@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kilogramos;
+        var pago;
+        var precio;
+        var descuento;
+
+        kilogramos = prompt("Ingresar kilogramos");
+        pago = prompt("Ingresar forma de pago");
+        
+
+        if (kilogramos>5 && pago=="contado") {
+            precio = parseInt(kilogramos) * 80
+            descuento = parseInt(precio) - (( parseInt(precio) * 10 ) / 100 ) 
+            alert ("El precio final es: " +descuento)
+        } else if (kilogramos>5 && pago!="contado") {
+            precio = parseInt(kilogramos) * 80  
+            alert ("El precio final es: " +precio)}
+            else {
+                precio = parseInt(kilogramos) * 100  
+            alert ("El precio final es: " +precio)
+            }
+    </script>
+</body>
+</html>

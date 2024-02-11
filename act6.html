@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tipo;
+        var cantidad;
+        var socio;
+        var monto;
+        var descuento;
+
+        tipo = prompt("Ingrese tipo de combustible");
+        cantidad = prompt("Ingrese cantidad de combustible");
+        socio = prompt("Es socio del Automovil Club Argentino?")
+
+     
+            if (tipo=="nafta super" && socio=="no") {
+                monto = parseInt(cantidad) * 13.49
+                alert ("El monto a cobrar es: $" +monto);
+            }
+            else   if (tipo=="nafta premium" && socio=="no") {
+                monto = parseInt(cantidad) * 14.99
+                alert ("El monto a cobrar es: $" +monto);
+            }
+            else   if (tipo=="diesel 500" && socio=="no") {
+                monto = parseInt(cantidad) * 15.12
+                alert ("El monto a cobrar es: $" +monto);
+            }
+            else if (tipo=="nafta super" && socio=="si") {
+                monto = parseInt(cantidad) * 13.49
+                descuento = parseInt(monto) - ((parseInt(monto) * 5) / 100);
+                alert ("El monto a cobrar es: $" +descuento);
+            }
+            else if (tipo=="nafta premium" && socio=="si") {
+                monto = parseInt(cantidad) * 14.99
+                descuento = parseInt(monto) - ((parseInt(monto) * 5) / 100);
+                alert ("El monto a cobrar es: $" +descuento);
+            }
+            else if (tipo=="diesel 500" && socio=="si") {
+                monto = parseInt(cantidad) * 15.12
+                descuento = parseInt(monto) - ((parseInt(monto) * 5) / 100);
+                alert ("El monto a cobrar es: $" +descuento);
+            }
+        
+
+    </script>
+</body>
+</html>

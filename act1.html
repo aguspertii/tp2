@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nombre;
+        var inasistencias;
+        var resta;
+        var monto;
+        nombre = prompt("Ingrese su nombre");
+        inasistencias = prompt("Ingrese el numero de inasistencias en el mes");
+
+        resta = 500 * parseInt(inasistencias);
+        monto = 3000 - parseInt(resta);
+
+        alert("A " + nombre + " le corresponde cobrar el bono por buena asistencia");
+        alert("Monto a percibir $" + monto);
+
+    </script>
+</body>
+
+</html>
